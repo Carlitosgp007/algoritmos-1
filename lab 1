@@ -1,0 +1,114 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#define TAM 30
+#define salariominimo 1400
+
+using namespace std;
+void cargarvector(float v[],int tam);
+void mostrarvector(float v[],int tam);
+float promedio(float v[],int tam);
+float calculosalarioneto (float v,int tam);
+
+void main()
+{
+int n; float v[TAM];
+cout<<"Ingrese el numero de empleados";
+cin>>n;
+cargarvector (v,n);
+float z=promedio(v,n);
+cout<<"el promedio es :"<<z;
+_getch();
+}
+
+void cargarvector(float v[], int n)
+{
+float s=0,salariobruto=0,salario neto;
+	for(int i=0;i<=n;i++)
+	{
+	cout<<"Ingrese el salario bruto"<<endl<<"v["<<i<<"]=";
+		cin>>v[i];
+		if (v[i]>(2*salariominimo))
+			 salarioneto=calculosalarioneto(v[i],n);
+		else 
+			salarioneto=v[i];
+		cout<<"El salarioneto es :"<<salarioneto<<endl;
+		s=salariobruto+salarioneto;
+	}
+	cout<<"El promedio es:"<<endl;
+	_getch();
+}
+
+   
+
+void mostrarvector(float v[] int n)
+{
+	for(int i=0;i<n;i++)
+		cout<<"v["<<i<<"]="<<v[i]<<endl;
+}
+float calculosalarioneto(float v, int n)
+{   float b;
+	b=v-v*0.251;
+	return b;
+}
+
+floatpromedio (float v[],int n)
+{
+	float s=0;
+	float z;
+	for (int i=0;i<n;i++)
+	{
+		s=s+v[i];
+	}
+	z=s/n;
+	return z;
+}
+
+
+
+
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+float calculodelaecuacioncuadratica (float a, float b, float c);
+
+void main()
+{
+	float a,b,c,x;
+	cout<<"Ingrese el valor de coeficiente a:";
+	cin>>a;
+	cout<<"Ingrese el valor del coeficiente b:";
+	cin>>b;
+	cout<<"Ingrese el valor del coeficiente c:";
+	cin>>c;
+	Ecuacion Cuadratica = calculodelaecuacioncuadratica(a,b,c);
+	cout<<"La Ecuacion Cuadratica es:"<<Ecuacion cuadratica;
+	getch();
+}
+float calculodelaecuacioncuadratica (float a, float b, float c)
+{ float x;
+  x1=((-b+sqrt(pow(b,2)-4*a*c))/2*a)
+  x2=((-b-sqrt(pow(b,2)-4*a*c))/2*a)
+  return x;
+}
+
+
+
+  
+	
+  
+  
+  
+	
+
+
+
+
+
+	
+
